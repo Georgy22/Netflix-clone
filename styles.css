@@ -83,8 +83,8 @@ li {
   @media screen and (max-width: 600px) {
         .select-box a {
        padding-bottom: 12%;
-          bottom: 6em;
-          position: absolute;
+          top: 6em;
+        
        
 }
       }
@@ -92,8 +92,7 @@ li {
  @media screen and (max-width: 300px) {
         .select-box a {
        padding-bottom: 12%;
-          bottom: 6em;
-          position: absolute;
+          top: 6em;
        
 }
       }
@@ -244,7 +243,8 @@ p {
         .get-btn {
             align-self: center;
             font-size: 16px;
-            padding: 20px 15px 10px 15px;
+            padding: 10px 15px 10px 15px;
+          top: 4em;
         }
     }
 
@@ -252,7 +252,8 @@ p {
         .get-btn {
             align-self: center;
             font-size: 16px;
-            padding: 20px 15px 10px 15px;
+            padding: 10px 15px 10px 15px;
+          top: 4%;
         }
     }
 
