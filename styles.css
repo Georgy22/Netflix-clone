@@ -84,6 +84,7 @@ li {
         .select-box a {
        padding-bottom: 12%;
           bottom: 6em;
+          position: absolute;
        
 }
       }
@@ -92,6 +93,7 @@ li {
         .select-box a {
        padding-bottom: 12%;
           bottom: 6em;
+          position: absolute;
        
 }
       }
@@ -242,9 +244,18 @@ p {
         .get-btn {
             align-self: center;
             font-size: 16px;
-            padding: 10px 15px;
+            padding: 20px 15px 10px 15px;
         }
     }
+
+    @media screen and (max-width: 300px) {
+        .get-btn {
+            align-self: center;
+            font-size: 16px;
+            padding: 20px 15px 10px 15px;
+        }
+    }
+
     .get-btn:hover {
         background-color: #b80f17;
         transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
