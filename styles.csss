@@ -80,12 +80,6 @@ li {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .select-box a {
-        margin-bottom: 3.9%;
-    }
-}
-
 .select-box a:hover {
 
     background-color: #b80f17;
