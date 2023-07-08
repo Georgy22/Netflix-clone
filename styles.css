@@ -80,6 +80,13 @@ li {
     }
 }
 
+  @media screen and (max-width: 600px) {
+        .select-box a {
+       padding-bottom: 12px;
+       
+}
+      }
+
 .select-box a:hover {
 
     background-color: #b80f17;
