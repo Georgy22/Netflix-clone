@@ -83,9 +83,19 @@ li {
   @media screen and (max-width: 600px) {
         .select-box a {
        padding-bottom: 12%;
+          bottom: 6em;
        
 }
       }
+
+ @media screen and (max-width: 300px) {
+        .select-box a {
+       padding-bottom: 12%;
+          bottom: 6em;
+       
+}
+      }
+
 
 .select-box a:hover {
 
