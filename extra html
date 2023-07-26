@@ -1,0 +1,39 @@
+      <div class="section-media4">
+                        <img class="rg1" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="">
+                        
+                        <div class="video-div video-2">
+                            <video autoplay="" playsinline="" muted="" loop="">
+                                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        <section class="text-only">
+            <div class="container4">
+                <div class="section-wrap">
+                <div class="section-text2">
+                        <h1>Watch everywhere</h1>
+                        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+               </div>     
+        </section>
+
+       
+        <script>
+            window.addEventListener("resize", function () {
+                document.documentElement.style.fontSize = window.innerWidth / 100 + "px";
+            });
+        </script>
+
+<script>
+    window.addEventListener("resize", function () {
+        if (window.innerWidth < 768) {     
+        document.documentElement.classList.add ("mobile");
+        } else {
+            document.documentElement.classList.remove("mobile");
+        } 
+    });
+</script>
+         

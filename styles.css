@@ -11,6 +11,7 @@ body {
     font-weight: 400;
     background-color: black;
     color: #fff;
+    overflow-x: hidden;
 }
 
 /* Utilities */
@@ -35,10 +36,30 @@ li {
 
 @media screen and (max-width: 800px) {
     .header {
-        height: 85vh;
-
+        height: 75vh;
    }
 }
+
+@media screen and (max-width: 375px) {
+    .header {
+        height: 100vh;
+    }
+}
+
+@media screen and  (max-width: 414px) {
+    .header {
+        height: 65vh;
+        overflow-y: hidden;
+
+    }
+}  
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+    main {
+width: 100%;        
+overflow-y: hidden;
+    }
+}  
 
 .logo svg {
     fill: #e50914;
@@ -68,11 +89,60 @@ li {
     background-color: #e50914;
     padding: 8px 18px;
     border-radius: 0.2em;
-    display: inline-block;
-    border: none;
+    border: none; 
 }
 
 @media screen and (max-width: 800px) {
+    .select-box {
+        height: 10px;
+        padding: 6px 16px;
+        margin-bottom: 3.85%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .select-box a{
+        right: 1em;
+        position: relative;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .select-box {
+        height: 10px;
+        padding: 6px 16px;
+        margin-bottom: 3.85%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .select-box {
+        height: 10px;
+        padding: 6px 16px;
+        margin-bottom: 3.85%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .select-box a {
+        height: 10px;
+        padding: 12px 16px;
+        margin-bottom: 3.85%;
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .logo {
+        width: 30%;
+        padding-left: 4em;
+    }
+}
+
+@media screen and (max-width: 1400px) {
     .select-box {
         height: 10px;
         padding: 6px 16px;
@@ -102,6 +172,20 @@ li {
     display: grid;
     place-content: center;
 }
+
+@media screen and (max-width: 414px) {
+    .header-content {
+        padding: 0 15%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header-content {
+        padding: 8% 20% 0 20%;
+        font-size: 18px;
+    }
+}
+
 
 .form-field {
     text-align: center;
@@ -180,16 +264,16 @@ p {
     color: #222;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    padding: 20px 24px;
-    
-    
+    padding: 20px 24px;   
 }
+
+
+
 .form-label {
     position: relative;
     top: 0;
     left: 0;
     font-size: 15px;
-    
     color: #222;
     width: 96%;
     transition: all 0.2s ease-in-out 
@@ -220,7 +304,10 @@ p {
     padding: 10px 24px;
     border-radius: 5px;
     left: 0;
+    position: relative;
 }
+
+
     @media screen and (max-width: 600px) {
         .get-btn {
             align-self: center;
@@ -228,55 +315,36 @@ p {
             padding: 10px 15px;
         }
     }
+
+    @media screen and (max-width: 375px) {
+        .get-btn {
+            align-self: center;
+            font-size: 14px;
+            padding: 5px 10px;
+            
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        .get-btn {
+            align-self: center;
+            font-size: 14px;
+            padding: 5px 10px;
+            top: 1.5em;
+            
+        }
+    }
+
     .get-btn:hover {
         background-color: #b80f17;
         transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
     }
 
-    section {
-        padding: 80px 0 0 0;
-        border-top: 8px solid #222;
-        align-items: center;         
-    }
-
-    .container2 {
-        margin: 0;
-        height: 68vh;
-        padding: 0 5%;
-
-     }
-    
-
-    .section-wrap {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
-
-    @media screen and (max-width: 960px) {
-        .section-wrap {
-            flex-direction: column;
-            text-align: center;
-        }
-    }
-
-    .section-text {
-        flex-basis: 50%;
-        padding: 0 0 0 5em;
-
-    }
-
     @media screen and (max-width: 800px) {
-        .section-text {
-       padding: 0 3em 0 3em;
-       
+        .header-content {
+       padding-bottom: 8em;
 }
       }
-
-    .section-text p {
-        font-size: 24px;
-    }
-
       
     @media screen and (max-width: 800px) {
         .header-content h1 {
@@ -302,6 +370,94 @@ p {
        font-size: 1.3em;
 }
       }
+
+      @media screen and (max-width: 414px) {
+        .header-content label {
+width: 70%;
+left: 1.6em;
+}
+      }
+
+      section {
+        padding: 80px 0 0 0;
+        border-top: 8px solid #222;
+        align-items: center;         
+    }
+
+    .container2 {
+        margin: 0;
+        height: 68vh;
+        padding: 0 5%;
+        position: relative;
+
+     }
+    
+     @media screen and (max-width: 414px) {
+        section .container2 {
+            position: relative;
+            height: 40vh;
+        }  
+    }
+
+    .section-wrap {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    @media screen and (max-width: 960px) {
+        .section-wrap {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .container3 .section-text {
+        flex-basis: 50%;
+        padding: 0 0 0 5em;
+
+    }
+
+    @media screen and (max-width: 800px) {
+       .container3 .section-text1 {
+       padding: 0;
+       width: 70%;
+    right: 7em;       
+}
+    }
+
+    @media screen and (max-width: 800px) {
+        .section-text1.ptag{
+        padding: 0;
+        width: 100%;
+     font-size: 0.6rem; 
+position: absolute; 
+}
+     }
+    
+@media screen and (max-width: 414px) {
+    .container3 .section-text1 {
+        padding: 0 2em;
+    }
+    
+}
+
+      
+
+      @media screen and (max-width: 375px) {
+       .container3 .section-text1 {
+            padding: 0 2em;
+        }
+        
+    }
+    
+          
+    
+
+    .section-text1 p {
+        font-size: 1.125em;
+    }
+
  
 
     .section-media {
@@ -310,11 +466,37 @@ p {
 
     }
     
+    @media screen and (max-width: 414px) {
+        .section-media {
+            padding: 0 3em;
+            position: relative;
+            margin: 0;
+            top: 3em;
+        }
+        
+    }
 
     .section-media img {
         width: 100%;
         padding: 0 5%;
     }
+
+    @media screen and (max-width: 414px) {
+        .section-media img{
+            padding: 0;
+            height: 30%;
+        }
+        
+    }
+
+    @media screen and (max-width: 414px) {
+        .video-div {
+            padding: 0 3em;
+            position: absolute;
+            width: 60%;
+        }  
+    }
+
      .video-div {
         width: 100%;
         height: 100%;
@@ -333,6 +515,15 @@ p {
         left: 50%;
      }
      
+     @media screen and (max-width: 414px) {
+        .video-1 {
+            padding: 0 3em;
+            width: 60%;
+            position: absolute;
+        }  
+    }
+
+   
      @media screen and (max-width: 800px) {
         .container2 p {
        padding: 0;
@@ -375,6 +566,15 @@ p {
 
      }
     
+     @media screen and (max-width: 414px) {
+        .container3 {
+            padding: 0;
+            position: relative;
+            top: 30%;
+        }
+        
+    }
+    
      .container3 h1 {
         margin: 0;
         padding: 0 0 18px 0; 
@@ -383,16 +583,15 @@ p {
      .container3 p {
         margin: 0;
         padding: 0 20px 18px 10px;
-
      }
 
 
     @media screen and (max-width: 800px) {
         .container3 {
-       display: block;
-       padding: 0;
        margin: 0;
-       height: 100vh;
+       height: 80vh;
+       padding-bottom: 12%;
+       
 }
       }
 
@@ -404,38 +603,68 @@ p {
 
       @media screen and (max-width: 800px) {
         .container3 h1 {
-       padding: 0 0 0 15rem;
+       padding: 0 0 0 1.5rem;
        margin: 0;
        font-size: 2em;
-       width: 800px;
 }
       }
 
       @media screen and (max-width: 800px) {
         .container3 p {
-       font-size: 1.125em;
-       
+        font-size: 1px;
+position: relative;
+z-index: 10;
 }
       }
 
       @media screen and (max-width: 800px) {
          .section-media2 {
-       padding: 45% 0 0 0;
+       padding: 0;
        position: absolute;
        width: 100%;
-       margin-top: 50em;
-       
+       left: 5%;
+       margin-top: 55em;
 }
       }
 
+      
+
+      @media screen and (max-width: 414px) {
+        .section-media2 {
+            padding: 0;
+            margin: 0;
+            top: 50%;
+            left: 38%;
+
+}
+     }
+
+     @media screen and (max-width: 414px) {
+        .section-text1 h1{
+          bottom: 10em;
+          position: relative;
+          z-index: 10;
+          font-size: 1.8em;
+          
+       }
+     }
+
+     @media screen and (max-width: 414px) {
+        .section-text1 p{
+          bottom: 2em;
+          position: absolute;
+          font-size: 1.125em;
+          width: 100%;
+          
+       }
+     }
+
+
       @media screen and (max-width: 800px) {
         .section-text1 p {
-       padding: 0 0 0 10em;
+       padding: 0 0 0 2em;
        margin-top: 1rem;
-       font-size: 12px;
-       font-weight: 400;
-       font-size: 1.125em;
-       position: relative;
+       font-size: 2px;
 
 }
       } 
@@ -454,17 +683,27 @@ p {
 @media screen and (max-width: 800px) {
     .rg {
        margin: 0;
-       height: 480px;
+       height: 400px;
        position: absolute;
-       right: 1em;
-       bottom: 0;
+       right: 6em;
+       bottom: 30%;
    }
  }
  
+ @media screen and (max-width: 414px) {
+    .rg {
+      height: 400px;
+   }
+ }
+ 
+ 
+
 .section-text1{
     margin: 0;
     padding: 0 8% 0 0;
+    position: relative;
 }
+ 
 
 .section-text1 p{
     font-size: 24px;
@@ -490,13 +729,29 @@ p {
 
 @media screen and (max-width: 800px) {
     .dd {
-       left: 22%;
-       bottom: 14%;
+       left: 17%;
+       bottom: 29%;
        width: 58%;
        position: absolute;
    }
  }
- 
+
+ @media screen and (max-width: 414px) {
+    .dd {
+       left: -21%;
+       top: 50%;
+       width: 68%;
+       padding: 0 ;
+   }
+ }
+
+ @media screen and (max-width: 414px) {
+    .container3 {
+       height: 70vh;
+       top: 12em;
+   }
+ }
+
 
      .dd img {
         height: 70px;
@@ -547,125 +802,88 @@ p {
        }
      }
 
-.section-media4 {
-    position: relative;
-    max-width: 100%;
-    padding-left: 8%;
 
-}
-
-.rg1 {
-    padding-left: 10em;
-    margin: 0;
-    height: 380px;
-    position: relative;
-}
-
-@media screen and (max-width: 800px) {
-    .rg1 {
-        margin: 0;
-        height: 480px;
-        position: absolute;
-        right: 1em;
-        top: 6em;
-   
-
-}
-  }
+ 
 
 .container4 {
     margin: 0;
-    height: 85vh;
-    padding: 0 10% 0 15%;
+    height: 40vh;
+    padding: 0 20% 10% 20%;
+    position: relative;
  }
 
  .container4 h1 {
     margin: 0;
-    padding: 0 0 18px 0; 
+    padding: 0 0 24px 0; 
+    width: 30%;
  }
 
  .container4 p {
     margin: 0;
     padding: 0 0 18px 0; 
     font-size: 1.5rem;
-    width: 150%;
+    width: 60%;
 
  }
 
-@media screen and (max-width: 800px) {
-    .container4 {
-   position: absolute;
-   width: 100%;
-   margin: 0;
-   height: 60vh;
-   
 
-}
-  }
 
   @media screen and (max-width: 800px) {
- .section-media4 {
-  padding: 10% 0 0 0;
-  position: absolute;
-   width: 100%;
-   margin-top: 8%;
-   margin-right: 6%;
-}
-  }
+    .ff{
+        margin: 0;
+        padding: 0 3em;
+        height: 0;
+        position: relative;
 
+   }
+     }
 
+     @media screen and (max-width: 414px) {
+        .container4 h1{
+            margin: 0;
+            padding-bottom: 0;
+            position: absolute;
+    
+       }
+         }
+
+         @media screen and (max-width: 414px) {
+            .ff{
+                margin: 0;
+                padding-bottom: 0;
+                padding: 0;
+        
+           }
+             }
+       
+   
+     .section-text2 {
+        position: absolute;
+     }
 
   @media screen and (max-width: 800px) {
     .section-text2{
-      margin-right: 10%;
-      width: 120%;
+      width: 100%;
+    padding: 3em 2em;
+    height: 50vh;
+    
    }
      }
    
+     @media screen and (max-width: 800px) {
+        .section-text2 h1{
+         font-size: 2em;
+       }
+         }
+       
 
-  @media screen and (max-width: 800px) {
-    .container4 h1 {
-   padding: 0;
-   margin-top: 0;
-   font-size: 2em;
-   right: 15%;
-   
-}
-  }
-
-  
-  @media screen and (max-width: 800px) {
-    .container4 p {
-   padding: 0;
-   margin-top: 10px;
-   font-size: 1.125em;
-   width: 100%;
-}
-  }
-  
-  @media screen and (max-width: 800px) {
-    .video-2 {
-        padding: 10% 0 0 0;
-        max-width: 68%;
-        margin: 0;
-        height: 380px;
-        position: absolute;
-
-    }
-}
-
-    .video-2 {
-        max-width: 66%;
-        max-height: 47%;
-        top: 34%;
-        left: 55%;
-        padding-left: 10em;
-        margin: 0;
-        height: 380px;
-        position: absolute;
-  
-    }
-   
+         @media screen and (max-width: 800px) {
+            .section-text2 p{
+             font-size: 1.125em;
+           }
+             }
+           
+ 
 
     @media screen and (max-width: 800px) {
       .container5  .reverse {
@@ -677,7 +895,7 @@ p {
         position: relative;
         max-width: 100%;
         height: 100vh;
-        padding-top: 8%;
+        padding-top: 10%;
     }
     
    .sec {
@@ -693,35 +911,66 @@ p {
    
 @media screen and (max-width: 800px) {
     .rg2 {
-        height: 480px;
         position: absolute;
-     right: 5px;
-     padding: 0 2em;
+     padding: 1em 2em;
+     right: -12em;
+
+}
+  }
+
+  @media screen and (max-width: 800px) {
+    section {
+   width: 100%;
+   position: relative;
 
 }
   }
 
    @media screen and (max-width: 800px) {
     .container5 {
-   position: relative;
    width: 100%;
-   margin-top: 8%;
-   height: 130vh;
-   padding-bottom: 6em;
+   margin-top: 10%;
+   height: 60vh;
+   position: absolute;
 
 }
   }
 
+  @media screen and (max-width: 414px) {
+    .container5 {
+    height: 40%;
+    padding-top: 12%;
+   
+   
+   }
+     } 
+
   @media screen and (max-width: 800px) {
  .section-media5 {
-  padding: 10% 3rem 8em 45em;
- position: absolute;
-   margin-top: 15%;
+  padding: 0 3em 3em 5em;
+ position: relative;
 
 
 }
   }
     
+  @media screen and (max-width: 414px) {
+    .section-media5 {
+     padding: 25% 3rem 8em 0;
+      margin-top: 15%;
+   
+   }
+     }
+
+     @media screen and (max-width: 414px) {
+        .section-media5 img{
+         align-items: center;
+         margin-bottom: 0;
+         padding: 0 4em 0 4em;
+       }
+         }
+    
+
   .section-text3 p {
     font-size: 24px;
     padding-top: 3%;
@@ -731,18 +980,18 @@ p {
       @media screen and (max-width: 800px) {
         .section-text3 h1 {
        font-size: 2em;
-       padding-top: 3%;
+       top: 12px;
+       padding-left: 1px;
     }
       }
     
       
       @media screen and (max-width: 800px) {
         .section-text3 p {
-       margin-top: 0;
+       margin-top: 14px;
        font-size: 1.125em;
-       width: 120%;
-       padding-right: 4em;
-       margin-left: -3em;
+       width: 100%;
+       padding-right: 6em;
        text-align: center;
 
     }
@@ -750,11 +999,11 @@ p {
     
       @media screen and (max-width: 800px) {
         .sec {
-            height: 100vh;
-            margin-top: 100%;
+            height: 80vh;
+            margin-top: 40%;
             margin-bottom: 10%;
         }
-      }
+    }
 
       /* accordion  */
 .section-faq {
@@ -770,6 +1019,17 @@ height: 130vh;
 padding: 0 5%;
  }
   }
+
+  @media screen and (max-width: 414px) {
+    .section-faq {
+height: 100vh;
+width: 90%;
+padding: 0 5% 5% 5%;
+right:1.2em ;
+position: relative;
+ }
+  }
+
 
 
 @media screen and (max-width: 800px) {
@@ -876,18 +1136,58 @@ text-align: center;
 }
 }
 
+@media screen and (max-width: 414px) {
+    .form-field1 .form-label{
+top: 1.125em;
+right: 1em; 
+padding: 5% 0;  
+}
+}
+
+
 @media screen and (max-width: 800px) {
     .form-field1 .form-input{
-width: 90%;
+width: 93%;
 display: flex;
     }
 }
+
+@media screen and (max-width: 414px) {
+    .form-field1 .form-input{
+width: 95%;
+right: 6%;  
+position: absolute;
+}
+}
+
+@media screen and (max-width: 800px) {
+    form{
+right: 6%;  
+position: absolute;
+}
+}
+
+@media screen and (max-width: 414px) {
+    .get-btn1{
+width: 30%;
+top: 9em;
+left: 8em; 
+position: absolute;  
+}
+}
+
 
 .form-field1 {
     text-align: center;
     padding-top: 3em;
     position: relative;
+}
 
+@media screen and (max-width: 414px) {
+    .form-field1 {
+        bottom: 7em;
+        padding: 0 1em;
+    }
 }
 
 .form-field1 label {
@@ -929,6 +1229,20 @@ display: flex;
     padding: 40px 0px;
     margin-bottom:5em ;
 }
+
+@media screen and (max-width: 414px ){
+    .footer .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 414px ){
+    .footer {
+        width: 67%;
+    }
+}
+
+
 .footer a {
     font-size: 16px;
     color: rgba(255,255,255,0.7);
@@ -975,5 +1289,11 @@ text-align: left;
 margin: 0;
 color: rgba(255,255,255,0.7);
 position: relative;
-right: 4em;
+right: 7.5em;
+}
+
+@media screen and (max-width: 800px ){
+    .NG {
+        right: 4em;
+    }
 }
