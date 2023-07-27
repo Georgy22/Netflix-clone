@@ -1,7 +1,5 @@
 
-# Alx Specialization project
-
-# MY FIRST FRONTEND PROJECT 
+# Alx Specialization project (MY FIRST FRONTEND PROJECT)
 
 # NETFLIX ClONE 
 • *DESCRIPTION*
