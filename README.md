@@ -1,5 +1,6 @@
 
-# Alx Specialization project (frontend)
+# Alx Specialization project (frontend)![image](https://github.com/Georgy22/Netflix-clone/assets/106970884/d08697b5-9931-4f14-a238-c37a26b1fed4)
+
 
 # Netflix-clone website
 • DESCRIPTION;
