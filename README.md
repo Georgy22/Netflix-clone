@@ -2,19 +2,19 @@
 # Alx Specialization project (frontend)
 
 # Netflix-clone website
-• *DESCRIPTION*
+• DESCRIPTION;
 
 This project is a clone of the Netflix Nigeria Website, a streaming service that allows members to watch TV shows and movies on an internet-connected device. 
 
-• *TECHNOLOGIES/LANGUAGES USED*
+• TECHNOLOGIES/LANGUAGES USED;
 
 I used HTML, CSS and JavaScript for this project.
 
-• CHALLENGES*
+• CHALLENGES;
 
 I had problem working on the mobile view of various mobile devices, and I'm still trying to fully understand JavaScript.
 
-• *TEAM MEMBERS*
+• TEAM MEMBERS;
 
 This project was done by;
 NWANERI GEORGINIA
