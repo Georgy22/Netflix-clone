@@ -1,8 +1,9 @@
 
-# Alx Specialization project (frontend)![image](https://github.com/Georgy22/Netflix-clone/assets/106970884/d08697b5-9931-4f14-a238-c37a26b1fed4)
-
+# Alx Specialization project (frontend)
 
 # Netflix-clone website
+![image](https://github.com/Georgy22/Netflix-clone/assets/106970884/17936c61-9fa5-412a-8d34-9fdd97b38b4f)
+
 • DESCRIPTION;
 
 This project is a clone of the Netflix Nigeria Website, a streaming service that allows members to watch TV shows and movies on an internet-connected device. 
