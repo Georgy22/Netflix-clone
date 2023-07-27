@@ -12,10 +12,12 @@ I used HTML, CSS and JavaScript for this project.
 
 • CHALLENGES;
 
-I had problem working on the mobile view of various mobile devices, and I'm still trying to fully understand JavaScript.
+I had problem making the website fully responsive on various mobile devices.
+I'm also trying to understand JavaScript.
 
 • TEAM MEMBERS;
 
 This project was done by;
+
 NWANERI GEORGINIA
 email; georgi.reginald12@gmail.com
