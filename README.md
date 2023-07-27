@@ -1,5 +1,5 @@
 
-# Alx Specialization project (MY FIRST FRONTEND PROJECT)
+# Alx Specialization project (frontend)
 
 # NETFLIX ClONE 
 • *DESCRIPTION*
